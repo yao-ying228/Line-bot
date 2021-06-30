@@ -40,9 +40,9 @@ def handle_message(event):
     msg = event.message.text
     r = '你再說三小'
 
-    if msg = 'hi' : 
+    if msg == 'hi' : 
         r = '嗨'
-    elif msg = '機掰' :
+    elif msg == '機掰' :
         r = '嗨,臭機掰'
    
     line_bot_api.reply_message(
