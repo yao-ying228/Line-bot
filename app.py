@@ -40,6 +40,19 @@ def handle_message(event):
     msg = event.message.text
     r = '你再說三小'
 
+    if ['貼圖' , '你好' , '好久不見'] in msg :
+        sticker_message = StickerSendMessage(
+        package_id='1',
+        sticker_id='1'
+    )
+        line_bot_api.reply_message(
+        event.reply_token,
+        sticker_message)
+
+
+
+        return
+
     if msg == 'hi' : 
         r = '嗨'
     elif msg == '機掰' :
