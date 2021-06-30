@@ -43,12 +43,8 @@ def handle_message(event):
     if msg = 'hi' : 
         r = '嗨'
     elif msg = '機掰' :
-        r = '臭機掰'
-    elif msg = '鬧狗' :
-        r = '鬧小'
-    elif ms = 'pp' :
-        r = '真的很北藍'
-
+        r = '嗨,臭機掰'
+   
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=r))
