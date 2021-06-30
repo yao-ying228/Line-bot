@@ -40,7 +40,7 @@ def handle_message(event):
     msg = event.message.text
     r = '你再說三小'
 
-    if '貼圖' , '幹' in msg :
+    if '貼圖' in msg :
         sticker_message = StickerSendMessage(
         package_id='1',
         sticker_id='1'
