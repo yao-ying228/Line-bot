@@ -40,7 +40,7 @@ def handle_message(event):
     msg = event.message.text
     r = '你再說三小'
 
-    if '給我貼圖'  in msg :
+    if '來個貼圖吧' in msg :
         sticker_message = StickerSendMessage(
         package_id='1',
         sticker_id='1'
@@ -48,8 +48,6 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,
             sticker_message)
-
-
 
         return
 
