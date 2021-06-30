@@ -46,7 +46,7 @@ def handle_message(event):
         r = '臭機掰'
     elif msg = '鬧狗' :
         r = '鬧小'
-    elif ms = 'pp' , '北藍' :
+    elif ms = 'pp' :
         r = '真的很北藍'
 
     line_bot_api.reply_message(
