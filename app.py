@@ -42,11 +42,11 @@ def handle_message(event):
 
     if msg = ['hi' , '你好' , '幹']
         r = '嗨'
-    elif msg = '機掰'
+    elif msg = '機掰' :
         r = '臭機掰'
-    elif msg = '鬧狗'
+    elif msg = '鬧狗' :
         r = '鬧小'
-    elif ms = '['幹' , 'pp' , '北藍']
+    elif ms = [  'pp' , '北藍']
         r = '真的很北藍'
 
     line_bot_api.reply_message(
